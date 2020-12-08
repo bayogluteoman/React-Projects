@@ -1,0 +1,3 @@
+[0808/010824.057:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0809/004440.539:ERROR:directory_reader_win.cc(43)] FindFirstFile: The system cannot find the path specified. (0x3)
+[0810/014836.893:ERROR:filesystem_win.cc(129)] GetFileAttributes C:\Users\bayog\AppData\Local\Microsoft\Edge Dev\User Data\Crashpad\attachments\29b7563b-76e2-4113-891c-e3f2edd50628: The system cannot find the path specified. (0x3)
