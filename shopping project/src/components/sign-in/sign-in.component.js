@@ -9,21 +9,22 @@ class SignIn extends React.Component{
         super(props);
 
         this.state={
-            email:'',
-            password:''
-        }
+            email: '',
+            password: ''
+        };   
     }
     
-    handleSubmit = event =>{
+    handleSubmit = event => {
         event.preventDefault();
-        this.setState({email:'',password:''})
+        this.setState({email:'', password:''})
 
-    }
+    };
 
     handleChange= event =>{
-        const {value,name}=event.target;
-        this.setState({[name]:value})
-    }
+        const { value, name }=event.target;
+        this.setState({ [name]: value})
+    };
+
     render(){
         return(
             <div className='sign-in'>
@@ -35,7 +36,7 @@ class SignIn extends React.Component{
                     name="email" 
                     type="email" 
                     value={this.state.email} 
-                    handeChange={this.handleChange} 
+                    onChange={this.handleChange} 
                     label="email" 
                     required
                     />
@@ -43,8 +44,8 @@ class SignIn extends React.Component{
                     <FormInput 
                     name="password" 
                     type="password" 
-                    value={this.state.email} 
-                    handleChange={this.handleChange} 
+                    value={this.state.password} 
+                    onChange={this.handleChange} 
                     label="password"
                     required
                     />
