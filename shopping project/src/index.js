@@ -22,3 +22,8 @@ ReactDOM.render(
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
 reportWebVitals();
+
+/*  Provider nesnesini projemize dahil diyoruz. Ardından sarmallama işlemini 
+gerçekleştiriyoruz. Provider ile sararken store adında bir parametre tanımlamanız 
+gerekiyor. Bu parametrenin içine yazacağınız değişken adı sizin storunuza verdiğiniz
+isim ile aynı olmak zorunda. */
