@@ -7,6 +7,11 @@ export const selectCartItems = createSelector(
     (cart) => cart.cartItems                      //which gets passed from line 3 which passes out the cart item  
 );
 
+export const selectCartHidden = createSelector(
+    [selectCart],
+    cart => cart.hidden
+);
+
 export const selectCartItemsCount = createSelector(
     [selectCartItems],
     cartItems  =>

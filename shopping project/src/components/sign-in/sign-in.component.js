@@ -60,6 +60,10 @@ class SignIn extends React.Component{
                         <CustomButton type="button" onClick={signInWithGoogle} isGoogleSignIn>
                              Sign in with Google
                         </CustomButton>
+                       
+                    </div>
+                    <div className="contact">
+                    <a href = "mailto: @oleaboutique"><u>Contact with us</u></a>
                     </div>
                    
                 </form>

@@ -5,6 +5,7 @@ import CartItem  from  '../cart-item/cart-item.component';
 import { selectCartItems } from '../../redux/cart/cart.selectors';
 
 import './cart-dropdown.styles.scss'
+import { createStructuredSelector } from 'reselect';
 
 const CartDropdown = ({ cartItems }) => (
     <div className='cart-dropdown'>
@@ -26,8 +27,8 @@ const CartDropdown = ({ cartItems }) => (
  in our cart dropdown as well as our cart items count is not changing.Beside cart
  icon component don't need to re-render which helps save us on performance*/
  
-const mapStateToProps = (state) => ({
-   cartItems: selectCartItems(state)
+const mapStateToProps = createStructuredSelector({
+   cartItems: selectCartItems
 })
 export default connect(mapStateToProps)(CartDropdown);
 
