@@ -11,7 +11,6 @@ import SignInAndSignUpPage from './pages/sign-in-and-sing-up/sign-in-and-sign-up
 import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { connect} from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
-import { createStructuredSelector } from 'reselect';
 
 import './App.css';
 
