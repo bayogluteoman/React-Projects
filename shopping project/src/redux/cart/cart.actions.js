@@ -9,6 +9,17 @@ export const addItem = item =>({
     payload: item
 });
 
+export const clearItemFromCart = item =>({
+    type: CartActionTypes.CLEAR_ITEM_FROM_CART,
+    payload: item
+
+});
+
+export const removeItem = item =>({
+    type: CartActionTypes.REMOVE_ITEM,
+    payload: item
+
+});
 /*  Action’lar gönderdikleri payload datasının sadece ne olacağını söylerler. Uygulamanın datayı nasıl değiştireceğini 
  ve ne yapacağını bilemezler. Reducerlar bu noktada store’a gelen action’a göre uygulamanın state’inin nasıl değiştireceğini
  belirler ve store’a gönderir. Kısacası reducer tek işi olan veri değişimini yapar ve store’u güncellemiş olur. Ardından 
