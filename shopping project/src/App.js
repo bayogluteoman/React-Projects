@@ -64,7 +64,7 @@ componentWillUnmount(){
     );
   }  
 }
-
+//101.9.Batuhan
 const mapStateToProps = ({user})  =>({
   currentUser:user.currentUser
 });
