@@ -8,6 +8,7 @@
   
     .checkout-header {
       width: 100%;
+      font-size: 20px;
       padding: 10px 0;
       display: flex;
       justify-content: space-between;
@@ -16,6 +17,7 @@
       .header-block {
         text-transform: capitalize;
         width: 23%;
+        font-weight: bold;
   
         &:last-child {
           width: 8%;

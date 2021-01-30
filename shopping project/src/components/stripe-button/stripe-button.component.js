@@ -20,7 +20,7 @@ const onToken = token => {
             description={`Your total is ${price}₺`}
             amount={priceForStripe}
             panelLabel='Pay Now'
-            token={onToken}
+            token={onToken} 
             stripeKey={publishableKey}
         />
     );

@@ -3,35 +3,40 @@ import { connect } from 'react-redux';
 import CustomButton from '../custom-button/custom-button.component';
 import CartItem  from  '../cart-item/cart-item.component';
 import { selectCartItems } from '../../redux/cart/cart.selectors';
-import './cart-dropdown.styles.scss'
 import { createStructuredSelector } from 'reselect';
 import { withRouter } from 'react-router-dom';
 import { toggleCartHidden } from '../../redux/cart/cart.actions.js';
 
+import {
+  CartDropdownContainer,
+  CartDropdownButton,
+  EmptyMessageContainer,
+  CartItemsContainer
+} from './cart-dropdown.styles';
+
 const CartDropdown = ({ cartItems, history, dispatch }) => (
-    <div className='cart-dropdown'>
-      <div className='cart-items'>      
-          {
-            cartItems.length ? (
-            cartItems.map(cartItem => (
-            <CartItem key={cartItem.id} item={cartItem} />
-           ))
-          )
-          : ( 
-          <span className ='empty-message'>Your cart is empty</span>
-          )}
-        </div>
-      <CustomButton onClick={() => {
+  <CartDropdownContainer>
+    <CartItemsContainer>
+      {cartItems.length ? (
+        cartItems.map(cartItem => (
+          <CartItem key={cartItem.id} item={cartItem} />
+        ))
+      ) : (
+        <EmptyMessageContainer>Your cart is empty</EmptyMessageContainer>
+      )}
+    </CartItemsContainer>
+    <CartDropdownButton
+      onClick={() => {
         history.push('/checkout');
         dispatch(toggleCartHidden());
-        }}>
-        GO TO CHECKOUT
-      </CustomButton>
-    </div>
+      }}
+    >
+      GO TO CHECKOUT
+    </CartDropdownButton>
+  </CartDropdownContainer>
 );
-
 /*our cart dropdown component is not getting re-render when ever the state changes
- that unrelated  to the card items.For example when you sign in/out our cart items
+ that unrelated to the card items.For example when you sign in/out our cart items
  in our cart dropdown as well as our cart items count is not changing.Beside cart
  icon component don't need to re-render which helps save us on performance*/
  
