@@ -43,6 +43,7 @@ import {
       </WarningContainer>
       <StripeCheckoutButton price={total} />
     </CheckoutPageContainer>
+    
   );
   
 

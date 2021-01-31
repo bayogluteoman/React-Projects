@@ -18,8 +18,9 @@ return (
         {items.map(item => (
           <CollectionItem key={item.id} item={item} />
         ))}
-      </CollectionItemsContainer>
+      </CollectionItemsContainer>      
     </CollectionPageContainer>
+    
   );
 };
 

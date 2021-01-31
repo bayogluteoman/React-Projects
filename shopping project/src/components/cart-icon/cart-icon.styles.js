@@ -13,13 +13,13 @@ export const CartContainer = styled.div`
 `;
 
 export const ShoppingIcon = styled(ShoppingIconSVG)`
-  width: 24px;
-  height: 24px;
+  width: 32px;
+  height: 32px;
 `;
 
 export const ItemCountContainer = styled.span`
   position: absolute;
-  font-size: 10px;
+  font-size: 18px;
   font-weight: bold;
-  bottom: 12px;
+  bottom: 8px;
 `;
