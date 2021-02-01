@@ -35,11 +35,11 @@ import {
       {cartItems.map(cartItem => (
         <CheckoutItem key={cartItem.id} cartItem={cartItem} />
       ))}
-      <TotalContainer>TOTAL: ${total}</TotalContainer>
+      <TotalContainer>TOTAL: {total}₺</TotalContainer>
       <WarningContainer>
-        *Please use the following test credit card for payments*
+        Please use the following test credit card for payments
         <br />
-        3351 3351 3351 3351 - Exp: 01/21 - CVV: 123
+        4242 4242 4242 4242 - Exp: 01/24 - CVC: 123
       </WarningContainer>
       <StripeCheckoutButton price={total} />
     </CheckoutPageContainer>

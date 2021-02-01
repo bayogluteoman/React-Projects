@@ -40,7 +40,7 @@ class SignIn extends React.Component{
         return(
             <SignInContainer>
             <SignInTitle>I already have an account</SignInTitle>
-            <span>Sign in with your email and password</span>
+            <span> Sign in with your email and password</span>
     
             <form onSubmit={this.handleSubmit}>
               <FormInput

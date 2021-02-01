@@ -9,7 +9,7 @@ import {
   BackgroundImage,
   NameContainer,
   PriceContainer
-} from './collection-styles.styles';
+} from './collection-item.styles';
 
 const CollectionItem = ({ item, addItem }) => {
     const { name, price, imageUrl } = item;
@@ -19,7 +19,7 @@ const CollectionItem = ({ item, addItem }) => {
       <BackgroundImage className='image' imageUrl={imageUrl} />
       <CollectionFooterContainer>
         <NameContainer>{name}</NameContainer>
-        <PriceContainer>{price}</PriceContainer>
+        <PriceContainer>{price}₺</PriceContainer>
       </CollectionFooterContainer>
       <AddButton onClick={() => addItem(item)} inverted>
         Add to cart

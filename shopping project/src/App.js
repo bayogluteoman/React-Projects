@@ -13,9 +13,7 @@ import { auth, createUserProfileDocument } from './firebase/firebase.utils';
 import { connect} from 'react-redux';
 import { setCurrentUser } from './redux/user/user.actions';
 
-
-import './App.css';
-
+import { GlobalStyle } from './global.styles';
 
 class App extends React.Component {
   unsubscribeFromAuth=null;
@@ -48,6 +46,7 @@ componentWillUnmount(){
   render(){
     return (
       <div>
+        <GlobalStyle/>
         <Header/>
         <Switch>
           <Route  exact path='/' component={HomePage}/>

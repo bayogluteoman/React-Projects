@@ -11,8 +11,7 @@ export const Developer = styled.div`
     flex-direction: column;
     align-items:center;
     font-weight: bold;
-    font-size: 20px;
-    padding: 4rem;
+    padding: 1rem;
 
     a:visited { color: purple; }
     a:link { color: blue; }

@@ -1,5 +1,4 @@
 import React from 'react';
-import { GroupContainer } from '../form-input/form-input.styles';
 import { CustomButtonContainer } from '../custom-button/custom-buton.styles';
  import {
      ContactFormContainer,
@@ -15,7 +14,8 @@ import { CustomButtonContainer } from '../custom-button/custom-buton.styles';
         this.state = {
             displayName: '',
             email: '',
-            subject: ''
+            subject: '',
+            message: ''
         }
     }
 
@@ -25,46 +25,46 @@ import { CustomButtonContainer } from '../custom-button/custom-buton.styles';
     };
 
 render(){
-    const{displayName, email, subject } = this.state;
+    const{displayName, email, subject, message } = this.state;
 	return (
-        <GroupContainer>
     	<ContactFormContainer>
-        <FormInputLabel value='name'>Name </FormInputLabel>
-            <FormInputContainer type='text'
-                name='displayName'
-                value={displayName}
-                onChange={this.handleChange}
-                label='Display Name'
-                required
-              />
-        <FormInputLabel  value='email'>Email </FormInputLabel>
-            <FormInputContainer type='email'
-                            name='email'
-                            value={email}
-                            onChange={this.handleChange}
-                            label='Email'
-                            required
-                        />
-        <FormInputLabel  value='subject'>Subject </FormInputLabel>
-            <FormInputContainer type='text'
-                                        name='subject'
-                                        label='Subject'
-                                        onChange={this.handleChange}
-                                        value={subject}
-                                        required
-                                    />
-		     <FormInputLabel  value='subject'>Message </FormInputLabel>
-			<Textarea type='textarea' id='textarea' required />
-			<CustomButtonContainer type='submit'>Send</CustomButtonContainer>
+            <FormInputLabel value='name'/>
+                <FormInputContainer type='text'
+                    name='displayName'
+                    value={displayName}
+                    onChange={this.handleChange}
+                    placeholder="Enter your name"
+                    required
+                />
+            <FormInputLabel  value='email'/>
+                <FormInputContainer type='email'
+                    name='email'
+                    value={email}
+                    onChange={this.handleChange}
+                    placeholder="Enter your email"
+                    required
+                />
+            <FormInputLabel  value='subject'/>
+                <FormInputContainer type='text'
+                    name='subject'
+                    onChange={this.handleChange}
+                    value={subject}
+                    placeholder="Type the subject"
+                    required
+                />
+            
+            <Textarea 
+                    type='textarea' 
+                    id='textarea' 
+                    value={message}
+                    placeholder="Type your message" 
+                    required 
+            />
+		
+            <CustomButtonContainer type='submit'>Send</CustomButtonContainer>
+
 		</ContactFormContainer>
-        </GroupContainer>
 	);
 };
  }
 export default ContactForm;
-
-/*<FormInputLabel htmlFor='email'>Name</FormInputLabel>
-			<FormInputContainer type='text' id='name' required />
-			<FormInputLabel htmlFor='email' value='email'>Emaillllllllllllllll </FormInputLabel>
-			<FormInputContainer type='email' id='email' required />
-			<FormInputLabel htmlFor='textarea'>Messageeeeeeeeeeeeeeeeeeeeeeeeeeeeee</FormInputLabel> */
