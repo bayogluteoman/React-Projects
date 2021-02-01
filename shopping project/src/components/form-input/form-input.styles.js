@@ -29,8 +29,10 @@ export const FormInputContainer = styled.input`
   border-radius: 0;
   border-bottom: 1px solid ${subColor};
   margin: 25px 0;
+  transition: all ease-out .5s;
   &:focus {
     outline: none;
+    border-bottom: 2px solid green;
   }
   &:focus ~ label {
     ${shrinkLabelStyles}

@@ -61,7 +61,7 @@ export const CollectionFooterContainer = styled.div`
   height: 5%;
   display: flex;
   justify-content: space-between;
-  font-size: 18px;
+  font-size: 18px;  
 `;
 
 export const NameContainer = styled.span`
@@ -70,6 +70,6 @@ export const NameContainer = styled.span`
 `;
 
 export const PriceContainer = styled.span`
-  width: 10%;
+  width: 30%;
   text-align: right;
 `;
