@@ -24,10 +24,7 @@ export const ContactFormContainer = styled.form`
 	align-items: center;
 	text-align: left;
 
-	@media screen and (max-width: 800px) {
-		align-items: center;
-		padding: 2rem 4rem;
-	}
+	
 `;
 
 
@@ -79,6 +76,11 @@ export const FormInputContainer = styled.input`
 	&:focus {
 		outline: none;
 		border-bottom: 2px solid green;
+
+	}
+	@media screen and (max-width: 800px) {
+		align-items: center;
+		;
 	}
 
 `;
