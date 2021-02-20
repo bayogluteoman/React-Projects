@@ -14,7 +14,7 @@ export const ContactPageContainer = styled.div`
     height:90vh;
 
     @media screen and (min-width: 800px) {
-        background-size: 35rem 50rem;
+        background-size: 35rem 40rem;
         background-position: 50% 50%;
 	}
 
@@ -95,7 +95,7 @@ min-width: 10.3rem;
 width: auto;
 height: 3.125rem;
 letter-spacing: 0.5px;
-line-height: 3.125rem;
+line-height: 3.120rem;
 padding: 0 2.18rem;
 font-size: 0.93rem;
 text-transform: uppercase;

@@ -10,9 +10,7 @@ import { AnimationWrapper } from 'react-hover-animation';
 
 const TITLE = 'Contact | Teoman Bayoglu';
 
-function afterClicked(){
-    alert('Successfull send !');
-  };
+
   
 
 class ContactPage extends React.Component{
@@ -25,6 +23,8 @@ class ContactPage extends React.Component{
         };
 
     handleSubmit(e) {
+
+        alert('Thank you '+this.state.displayName + ', please check your email :)');
 
         e.preventDefault();
         const { displayName, email, subject, message } = this.state;
@@ -75,7 +75,7 @@ class ContactPage extends React.Component{
                     </Helmet>
                 <Navbar/>
                     <ContactPageContainer>
-                        <ContactFormContainer onSubmit={this.handleSubmit.bind(this)}>
+                        <ContactFormContainer id='f' onSubmit={this.handleSubmit.bind(this)}>
                            
                             <Input type='text'
                                 name='displayName'
@@ -109,10 +109,10 @@ class ContactPage extends React.Component{
                                 required 
                             />
 
-                            <Button onClick={afterClicked} class='button' type='submit'
+                            <Button class='button' type='submit'
                              variant="primary">Send</Button>
                             
-                        </ContactFormContainer>
+                        </ContactFormContainer> 
                     </ContactPageContainer>
                     <Footer/>
                     </motion.div>

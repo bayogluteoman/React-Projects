@@ -13,10 +13,10 @@ font-weight: bold;
   margin-right: 3rem;
   margin-bottom: 3rem;
   gap: 0px 0px;
-    grid-template-areas:
+  grid-template-areas:
   "A B";
 
-  @media screen and (min-width: 800px){
+  @media screen and (min-width: 250px){
     
     display: flex;
     flex-direction: column;
