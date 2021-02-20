@@ -2,7 +2,8 @@ import styled from 'styled-components';
 import Image from '../../img/splash.jpg';
 
 export const AboutContainer = styled.div`
-  
+font-family: 'Indie Flower', cursive;
+font-weight: bold;
  .grid-container {
   display: grid;
   grid-template-columns: auto auto;
@@ -12,10 +13,10 @@ export const AboutContainer = styled.div`
   margin-right: 3rem;
   margin-bottom: 3rem;
   gap: 0px 0px;
-  grid-template-areas:
-    "A B";
+    grid-template-areas:
+  "A B";
 
-    @media screen and (max-width: 800px){
+  @media screen and (min-width: 800px){
     
     display: flex;
     flex-direction: column;
@@ -25,19 +26,16 @@ export const AboutContainer = styled.div`
     margin-bottom: 0rem; 
     }
 
+  .A { 
+    grid-area: A;
+   
+   }
+  .B { 
+    grid-area: B;
+   }
+
 }
 
-.A { 
-  grid-area: A;
-  padding-left: 5rem;
-  padding-right: 5rem;  
- }
-
-.B { 
-  
-  grid-area: B;
-
-   }
 
    .splash{
     background: url(${Image}) center no-repeat;
@@ -46,7 +44,7 @@ export const AboutContainer = styled.div`
     width : 32rem;
 
     @media screen and (max-width: 800px){
-      background-position: s30% 50%;
+      background-position: 30% 50%;
       height : 19rem;
       width : 20rem;
       margin-top: -4rem;
@@ -61,8 +59,8 @@ export const AboutContainer = styled.div`
     width: 16rem;
     border-radius: 50%;
     margin-top: 8rem;
-    margin-left: 9.6rem;
-    border: 5px solid #FFFFFF;
+    margin-left: 3.6rem;
+    border: 2px solid #000;
 
     @media screen and (max-width: 800px){
     
@@ -91,7 +89,7 @@ justify-content: center;
     
   font-size: 0.8rem;
   align-items: center;
-  text-align: center;
+  text-align: left;
   padding: 1rem; 
   }
 
@@ -114,7 +112,6 @@ export const SubA = styled.div`
 display: inline-block
 height: 15rem;
 width: 100%;
-padding: 1rem;
 `;
 
 export const SubB = styled.div`
@@ -129,6 +126,7 @@ width: 100%;
 `;
 
 export const Button = styled.button`
+font-family: 'Indie Flower', cursive;
 background-color: #37b5ff;
 color: black;
 border: none;
@@ -140,24 +138,19 @@ line-height: 3.125rem;
 padding: 0 2.18rem;
 font-size: 0.93rem;
 text-transform: uppercase;
-font-family: 'Open Sans Condensed';
 font-weight: bolder;
 cursor: pointer;
 display: flex;
 margin-right: auto;
 margin-left: auto;
-box-shadow: 5px 5px 15px 5px #000;
+border-radius: 1.5rem;
+outline: none;
 
 &:hover {
-    background-color: #000;
-    color: white;
-    border: 1px solid black;
-    box-shadow: 5px 5px 15px 5px #37b5ff;
+    background-color: #6ac8ff;
 }
-&:focus {
-box-shadow: 0 0.1rem 0.6rem #777;
-opacity: 0.9;
-}
+
+
 
 @media screen and (max-width: 800px){
   margin-bottom: 10rem; 

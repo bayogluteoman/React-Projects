@@ -1,6 +1,6 @@
 {
   "name": "website",
-  "homepage":"http://teomanbayoglu.com/",
+  "homepage": "http://teomanbayoglu.com/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -19,6 +19,8 @@
     "react-circular-progressbar": "^2.0.3",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
+    "react-hover-animation": "^2.1.1",
+    "react-hover-button": "^0.4.3",
     "react-icons": "^4.2.0",
     "react-move": "^6.4.0",
     "react-router": "^5.2.0",

@@ -6,8 +6,14 @@ import { motion } from 'framer-motion';
 import {ContactPageContainer, ContactFormContainer, Input, Textarea, Button } from './contact.styles';
 
 import { Helmet } from 'react-helmet';
+import { AnimationWrapper } from 'react-hover-animation';
 
 const TITLE = 'Contact | Teoman Bayoglu';
+
+function afterClicked(){
+    alert('Successfull send !');
+  };
+  
 
 class ContactPage extends React.Component{
     
@@ -103,10 +109,8 @@ class ContactPage extends React.Component{
                                 required 
                             />
 
-                            <Button type='submit'
-                             variant="primary">
-                                 Send
-                            </Button>
+                            <Button onClick={afterClicked} class='button' type='submit'
+                             variant="primary">Send</Button>
                             
                         </ContactFormContainer>
                     </ContactPageContainer>

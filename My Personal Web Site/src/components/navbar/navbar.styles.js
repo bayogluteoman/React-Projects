@@ -18,22 +18,24 @@ export const NavbarContainer = styled.nav`
 `;
 
 export const NavItems = styled.div`
-    color: #fff;
+display: flex;
+    justify-content: space-between;
 `;
 
 export const Logo = styled(Link)`
 padding-left: 2rem;
 text-decoration: none;
-
 `;
 
 export const NavbarLink = styled(Link)`
-color: black;
+font-family: 'Indie Flower', cursive;
+font-weight: bolder;
+font-size: 1.1rem;
+color: #000;
+font-weight: bolder;
 text-decoration: none;
 padding: 1rem;
 justify-content: space-between;
-:hover{
-    font-weight: bold;
-    color: #37b5ff;
-  }
+
+
 `;

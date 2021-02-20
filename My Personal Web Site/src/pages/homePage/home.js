@@ -12,7 +12,6 @@ import { HomeContainer, Yazı, steps, LogoItems,
 import { Helmet } from 'react-helmet';
 
 const TITLE = 'Home | Teoman Bayoglu';
-
  
 
 const HomePage = () => (

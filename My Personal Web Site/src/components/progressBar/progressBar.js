@@ -25,7 +25,7 @@ const Progressbar = () => (
     <AnimatedProgressProvider
         valueStart={0}
         valueEnd={51}
-        duration={1.4}
+        duration={2.5}
         easingFunction={easeQuadInOut}
         repeat
       >
@@ -49,7 +49,7 @@ const Progressbar = () => (
       <AnimatedProgressProvider
         valueStart={0}
         valueEnd={33}
-        duration={1.4}
+        duration={2.5}
         easingFunction={easeQuadInOut}
         repeat
       >
@@ -74,7 +74,7 @@ const Progressbar = () => (
       <AnimatedProgressProvider
         valueStart={0}
         valueEnd={26}
-        duration={1.4}
+        duration={2.5}
         easingFunction={easeQuadInOut}
         repeat
       >
@@ -98,8 +98,8 @@ const Progressbar = () => (
 
       <AnimatedProgressProvider
         valueStart={0}
-        valueEnd={44}
-        duration={1.4}
+        valueEnd={65}
+        duration={2.5}
         easingFunction={easeQuadInOut}
         repeat
       >
