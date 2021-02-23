@@ -12,14 +12,13 @@ import { HomeContainer, Yazı, steps, LogoItems,
 import { Helmet } from 'react-helmet';
 
 const TITLE = 'Home | Teoman Bayoglu';
- 
 
 const HomePage = () => (
     <motion.div 
-            initial={{ opacity: 0}} 
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0}}
-            transition={{duration: 0.7}}
+    initial={{ opacity: 0}} 
+    animate={{ opacity: 1 }}
+    exit={{ opacity: 0}}
+    transition={{duration: 0.7}}
             >
     <div>
     <Helmet>

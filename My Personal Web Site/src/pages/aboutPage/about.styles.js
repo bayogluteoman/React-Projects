@@ -8,7 +8,7 @@ font-weight: bold;
   display: grid;
   grid-template-columns: auto auto;
   grid-template-rows: auto;
-  margin-top: 1rem;
+  margin-top: 2rem;
   margin-left: 3rem;
   margin-right: 3rem;
   margin-bottom: 3rem;
@@ -40,8 +40,8 @@ font-weight: bold;
    .splash{
     background: url(${Image}) center no-repeat;
     background-size: cover;
-    height : 32rem;
-    width : 32rem;
+    height : 34rem;
+    width : 37rem;
 
     @media screen and (max-width: 800px){
       background-position: 30% 50%;
@@ -55,8 +55,8 @@ font-weight: bold;
   } 
 
   .teo{
-    height: 16rem;
-    width: 16rem;
+    height: 18rem;
+    width: 20rem;
     border-radius: 50%;
     margin-top: 8rem;
     margin-left: 3.6rem;

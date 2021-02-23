@@ -9,10 +9,8 @@ export const FooterItem = styled.div`
     align-items: center;
     color: white;
     justify-content: center;
-
-    &:hover{
-      color: '#37b5ff';
-    }
+    font-weight: bolder;
+ 
 
     @media screen and (max-width: 800px){
         padding: 2.6rem;

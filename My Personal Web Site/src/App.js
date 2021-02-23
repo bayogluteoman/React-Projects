@@ -3,7 +3,6 @@ import HomePage from './pages/homePage/home';
 import ContactPage from './pages/contactPage/contact';
 import AboutMePage from './pages/aboutPage/about';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-
 import { AnimatePresence } from 'framer-motion';
 
 

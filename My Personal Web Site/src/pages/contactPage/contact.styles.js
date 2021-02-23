@@ -2,21 +2,37 @@ import styled from 'styled-components';
 import Image from '../../img/splash.jpg';
 
 export const ContactPageContainer = styled.div`
-   
-    display: flex;
+
+.grid-container {
+    display: grid;
     background: url(${Image});
     background-repeat: no-repeat;
-    background-size: 30rem 50rem;
-    background-position: 50% 50%;
-    justify-content: center;
-    align-items: center;
     padding: 0 1rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr; 
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+    margin-left: 3rem;
+    margin-right: 3rem;
     height:90vh;
+    gap: 0px 0px;
+    background-position: 4% 24%;
+    background-size:50% 75%;
+   
 
-    @media screen and (min-width: 800px) {
-        background-size: 35rem 40rem;
-        background-position: 50% 50%;
-	}
+    @media screen and (max-width: 800px) {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr; 
+        background-position: 70% -24%;
+        background-size:103% 72%;
+        
+    }
+
+    
+
+
+  }
+
 
 `;
 
@@ -25,17 +41,33 @@ export const ContactFormContainer = styled.form`
     color:#fff;
     padding: 2rem;
     border-radius: 2rem;
-	width: 30rem;
+	width: 100%;
     height: 30rem;
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
-    margin-top: 1.4rem;
+
+    @media screen and (min-width: 799px) {
+        font-size: 0.8rem;
+        width: 90%;
+        margin-top: -2rem;
+	}
 
     @media screen and (max-width: 800px) {
         font-size: 0.8rem;
+        width: 90%;
+        margin-top: -3rem;
 	}
+
+    @media screen and (min-width: 801px) {
+        font-size: 0.8rem;
+        width: 90%;
+        margin-top: 10rem;
+        margin-left: 5rem;
+	}
+
+   
 	
 `;
 
@@ -58,6 +90,11 @@ export const Input = styled.input`
     border: 2px solid green;
 		
 	}
+
+    @media screen and (min-width: 801px) {
+        font-size: 1.1rem;
+        width:60%; 
+	}
 `;
 
 export const Textarea = styled.textarea`
@@ -66,7 +103,7 @@ export const Textarea = styled.textarea`
     text-align: left;
     padding: 1rem 1rem; 
     margin: 1rem 0;
-    width: 29rem;
+    width: 100%;
     height: 7rem;
     resize: vertical;
     border-radius: 1rem;
@@ -81,6 +118,13 @@ export const Textarea = styled.textarea`
     @media screen and (max-width: 800px) {
         font-size: 1.1rem;
         width: 90%;
+        height: 20%;
+       
+	}
+
+    @media screen and (min-width: 801px) {
+        font-size: 1.1rem;
+        width:60%; 
 	}
 
    
@@ -105,18 +149,15 @@ display: flex;
 justify-content: center;
 border-radius: 1.5rem;
 outline: none;
-
 &:hover {
     background-color: #6ac8ff;
 }
 
     @media screen and (max-width: 800px){
+        padding: -1rem;
         &:hover {
             box-shadow: 5px 5px 15px 5px #fff;
         }
       }
-    
-
-   
-
 `;
+

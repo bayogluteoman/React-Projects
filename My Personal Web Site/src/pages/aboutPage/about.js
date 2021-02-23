@@ -7,7 +7,6 @@ import { motion } from 'framer-motion';
 import { AboutContainer, GroupA, GroupB,SubA,SubB,Button } from './about.styles';
 
 import { Helmet } from 'react-helmet';
-import { AnimationWrapper } from 'react-hover-animation';
 
 const TITLE = 'About | Teoman Bayoglu';
 
@@ -30,7 +29,7 @@ const AboutMePage = (props) => (
        <div class="A">
 
        <GroupA>  
-    <SubA>
+         <SubA>
         <h2 style={{  color:'#000', textAlign: 'center'}}>About me</h2>
             <p>Glad you made it to my website! My name is Teoman.
                I'm studying Software Engineering at Eskisehir
@@ -56,15 +55,15 @@ const AboutMePage = (props) => (
     </GroupB> 
         
     <Button onClick={() => props.history.push('/contact')}> Contact Me </Button>
-       </div>
-        <div class="B">
 
-          <div class='splash'>
-            <img  class='teo' src={Image2}/>
-          </div>
-          
+       </div>
+
+    <div class="B">
+         <div class='splash'>
+              <img  class='teo' src={Image2}/>
+            </div>
         </div>
-  </div>
+   </div>
 
     </AboutContainer>
     
