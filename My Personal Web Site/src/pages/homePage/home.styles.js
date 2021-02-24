@@ -3,15 +3,15 @@ import Image from '../../img/background.jpg';
 
 export const steps = [
 
-  'Hello... 👋', 800,
-  "Is there anyone here? ", 1000,
-  "Perfect ! It is nice to see you 👌 ", 1000,
-  "I'm Teoman Bayoglu ", 1000,
-  "I'm a Computer Engineer student ", 1000,
-  "It's my first experience to build a web site ",1000,
-  "Can you give me feedback? ",1000,
-  "Thank you 👌 ", 1000,
-  "I'm glad you to visit my web site ", 2500,
+  'Hello... 👋', 500,
+  "Is there anyone here? ", 500,
+  "Perfect ! It is nice to see you 👌 ", 500,
+  "I'm Teoman Bayoglu ", 500,
+  "I'm a Computer Engineer student ", 500,
+  "It's my first experience to build a web site ",500,
+  "Can you give me feedback? ",500,
+  "Thank you 👌 ", 50,
+  "I'm glad you to visit my web site ", 500,
   
 ];
 
@@ -21,7 +21,7 @@ export const HomeContainer = styled.div`
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
-    gap: 0px 0px;
+    gap: 1rem 0rem;
     grid-template-areas:
       "top"
       "bottom";
@@ -60,7 +60,7 @@ font-family: 'Indie Flower', cursive;
   text-shadow: -3px 3px 2px rgba(0, 0, 0, 1);
 
   @media screen and (max-width: 800px){
-    font-size: 1.8rem;
+    font-size: 1.5rem;
   }
 `;
 

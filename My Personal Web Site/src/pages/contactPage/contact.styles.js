@@ -25,8 +25,19 @@ export const ContactPageContainer = styled.div`
         grid-template-rows: 1fr 1fr; 
         background-position: 70% -24%;
         background-size:103% 72%;
+        height:95vh;
         
     }
+
+    @media screen and (min-width: 800px) and (max-width:1110px) {
+        background-position: -1% 30%;
+        background-size:50% 57%;
+	}
+
+    @media screen and (min-width: 1110px)  {
+        background-position: -5% 5%;
+        background-size:55% 70%;
+	}
 
     
 
@@ -48,23 +59,28 @@ export const ContactFormContainer = styled.form`
 	justify-content: center;
 	align-items: center;
 
-    @media screen and (min-width: 799px) {
-        font-size: 0.8rem;
-        width: 90%;
-        margin-top: -2rem;
-	}
-
+   
     @media screen and (max-width: 800px) {
         font-size: 0.8rem;
         width: 90%;
         margin-top: -3rem;
+        
 	}
 
-    @media screen and (min-width: 801px) {
+    @media screen and (min-width: 800px) and (max-width:1110px) {
         font-size: 0.8rem;
         width: 90%;
-        margin-top: 10rem;
-        margin-left: 5rem;
+        height: 70%;
+        margin-top: 3rem;
+     
+	}
+
+    @media screen and (min-width: 1110px)  {
+        font-size: 0.8rem;
+        width: 90%;
+        height: 70%; 
+        margin-top: 0rem; 
+        margin-left: 4rem; 
 	}
 
    
@@ -117,14 +133,14 @@ export const Textarea = styled.textarea`
 
     @media screen and (max-width: 800px) {
         font-size: 1.1rem;
-        width: 90%;
+        width: 97%;
         height: 20%;
        
 	}
 
     @media screen and (min-width: 801px) {
         font-size: 1.1rem;
-        width:60%; 
+        width:58%; 
 	}
 
    

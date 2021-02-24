@@ -80,9 +80,7 @@ class ContactPage extends React.Component{
                     <ContactPageContainer>
                     <div class="grid-container">
                         <div class="A" 
-                        style={{height:'32rem', justifyContent:'center'}}
-                        
-                        >
+                        style={{ justifyContent:'center'}}>
                     <ContactFormContainer id='f' onSubmit={this.handleSubmit.bind(this)}>
 
 
