@@ -8,18 +8,13 @@ import Home from './Home';
 function Login() {
     const history = useHistory();
 
-  
-
     const check = () => {
-        // stored data from the register-form
     var storedName = localStorage.getItem('name');
     var storedPw = localStorage.getItem('surname');
 
-    // entered data from the login-form
     var userName = document.getElementById('name');
     var userPw = document.getElementById('surname');
 
-    // check if stored data from register-form is equal to data from login form
     if(userName.value !== storedName || userPw.value !== storedPw) {
         alert('ERROR');
     }else {

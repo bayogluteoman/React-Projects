@@ -5,12 +5,6 @@ import Logo from '../images/logo.png';
 import Modal from '../components/OpenModal';
 import MyWallet from '../components/MyWallet';
 
-// npm uninstall
-// import filterFactory, { textFilter } from 'react-bootstrap-table2-filter';
-// import BootstrapTable from 'react-bootstrap-table-next';
-// import ToolkitProvider, { Search } from 'react-bootstrap-table2-toolkit';
-
-
 export default function Home() {
 
     const axios = require('axios');
